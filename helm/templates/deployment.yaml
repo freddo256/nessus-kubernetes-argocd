@@ -26,4 +26,4 @@ spec:
           args: [
             "-e", "ACTIVATION_CODE={{ .Values.nessus.activation_code }}",
             "-e", "USERNAME={{ .Values.nessus.username }}",
-            "-e" "PASSWORD={{ .Values.nessus.password }}"]
+            "-e", "PASSWORD={{ .Values.nessus.password }}"]
