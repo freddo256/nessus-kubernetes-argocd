@@ -4,6 +4,7 @@ service:
 
 image:
   tag: latest
+  pullPolicy: IfNotPresent
 
 resources: {}
   # limits:
