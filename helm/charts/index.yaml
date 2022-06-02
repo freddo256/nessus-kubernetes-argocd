@@ -3,12 +3,22 @@ entries:
   nessus:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-06-02T10:09:17.058129796+02:00"
+    created: "2022-06-02T12:06:20.530638618+02:00"
+    description: A simple helm chart for deploying nessus in kubernetes
+    digest: 2dcb186a9373b1c30410ada6d7f0c0404f1a27ae353f5d6e2472e1fc83f48abe
+    name: nessus
+    type: application
+    urls:
+    - https://freddo256.github.io/nessus-kubernetes-argocd/helm/charts/nessus-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-06-02T12:06:20.530303154+02:00"
     description: A simple helm chart for deploying nessus in kubernetes
     digest: b885df543f09c1dc29ba7377c7ed7b1a4011c2e00c7db31688716aa4a72b0282
     name: nessus
     type: application
     urls:
     - https://freddo256.github.io/nessus-kubernetes-argocd/helm/charts/nessus-0.1.0.tgz
-    version: 0.2.0
-generated: "2022-06-02T10:09:17.057860191+02:00"
+    version: 0.1.0
+generated: "2022-06-02T12:06:20.530003209+02:00"
