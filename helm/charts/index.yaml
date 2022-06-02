@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  nessus:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-06-02T10:09:17.058129796+02:00"
+    description: A simple helm chart for deploying nessus in kubernetes
+    digest: b885df543f09c1dc29ba7377c7ed7b1a4011c2e00c7db31688716aa4a72b0282
+    name: nessus
+    type: application
+    urls:
+    - nessus-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-02T10:09:17.057860191+02:00"

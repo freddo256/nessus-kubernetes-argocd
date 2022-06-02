@@ -1,0 +1,6 @@
+apiVersion: v2
+name: nessus
+description: A simple helm chart for deploying nessus in kubernetes
+type: application
+version: 0.1.0
+appVersion: "latest"
