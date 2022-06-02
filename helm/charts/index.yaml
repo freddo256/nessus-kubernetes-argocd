@@ -9,6 +9,6 @@ entries:
     name: nessus
     type: application
     urls:
-    - https://freddo256.github.io/nessus-kubernetes-argocd/main/helm/charts/nessus-0.1.0.tgz
+    - https://freddo256.github.io/nessus-kubernetes-argocd/helm/charts/nessus-0.1.0.tgz
     version: 0.1.0
 generated: "2022-06-02T10:09:17.057860191+02:00"
