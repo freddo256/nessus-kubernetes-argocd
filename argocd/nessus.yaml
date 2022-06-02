@@ -1,3 +1,4 @@
+---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -6,11 +7,25 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/freddo256/nessus-kubernetes.git
-    targetRevision: HEAD
-    path: kubernetes
+    chart: nessus
+    repoURL: https://freddo256.github.io/nessus-kubernetes-argocd/helm/charts
+    targetRevision: "0.1.0"
+    path: .
+    helm:
+      releaseName: nessus
+      values: |
+        service:
+          type: LoadBalancer
+          port: 443
+        image:
+          tag: latest
+          imagePullPolicy: IfNotPresent
+        nessus:
+          activation_code: ""
+          username: ""
+          password: ""
   destination:
-    server: https://kubernetes.default.svc
+    server: "https://kubernetes.default.svc"
     namespace: nessus
   syncPolicy:
     syncOptions:

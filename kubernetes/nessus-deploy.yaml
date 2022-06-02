@@ -19,10 +19,13 @@ spec:
       containers:
       - name: nessus
         image: tenableofficial/nessus:latest
-        args:
-          - "-e ACTIVATION_CODE="
-          - "-e USERNAME="
-          - "-e PASSWORD="
+        env:
+          - name: ACTIVATION_CODE
+            value: ""
+          - name: USERNAME
+            value: ""
+          - name: PASSWORD
+            value: ""
         ports:
         - containerPort: 8834
         imagePullPolicy: Always

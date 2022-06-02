@@ -23,7 +23,10 @@ spec:
             - containerPort: 8834
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          args: [
-            "-e", "ACTIVATION_CODE={{ .Values.nessus.activation_code }}",
-            "-e", "USERNAME={{ .Values.nessus.username }}",
-            "-e", "PASSWORD={{ .Values.nessus.password }}"]
+          env:
+          - name: ACTIVATION_CODE
+            value: "{{ .Values.nessus.activation_code }}"
+          - name: USERNAME
+            value: "{{ .Values.nessus.username }}"
+          - name: PASSWORD
+            value: "{{ .Values.nessus.password }}"
