@@ -13,11 +13,6 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
-args:
-- "-e ACTIVATION_CODE="
-- "-e USERNAME="
-- "-e PASSWORD="
-
 nessus:
   activation_code: ""
   username: ""
