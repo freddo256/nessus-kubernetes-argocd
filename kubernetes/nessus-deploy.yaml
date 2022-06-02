@@ -20,9 +20,9 @@ spec:
       - name: nessus
         image: tenableofficial/nessus:latest
         args:
-          - "-e ACTIVATION_CODE=PG6G-RCJJ-4SP4-EQDQ-EWCX"
-          - "-e USERNAME=admin"
-          - "-e PASSWORD=admin"
+          - "-e ACTIVATION_CODE="
+          - "-e USERNAME="
+          - "-e PASSWORD="
         ports:
         - containerPort: 8834
         imagePullPolicy: Always
